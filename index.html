@@ -4,6 +4,8 @@
     <meta charset="utf-8"/>
     <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 
     <title>Profile-Gabriella Coronel</title>
@@ -11,49 +13,64 @@
 <body>
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-xs-3 text-align-center">
-                    <img src="images/devlogoGC@100x-100.svg" width="300" height="300"/>
+            <div class="row justify-content-md-center">
+                <div class="col col-sm-6 col-md-6 col-lg-8 offset-5">
+                    <img src="images/devlogoGC@100x-100.svg" width="300" height="250"/>
                 </div> 
             </div>
-        </div>
-
-        
-                
-           
+        </div>      
     </header>
+
     <!-- navbar -->  
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">About</a>
-        <a href="#">Services</a>
         <a href="#">Projects</a>
+        <a href="#">Shop</a>
         <a href="#">Contact</a>
-      </div>
+    </div>
 
    
    
 
-        <div class="container-fluid" id="typewriter">
-            <div class="row">
-                <div class="col-lg-6">
+        <div class="container" id="typewriter">
+            <div class="row justify-content-md-center">
+                <div class="col col-md-12 col-sm-12 col-lg-8">
                     <h2>
                         Hi, I'm Gabriella. 
                     </h2>
                 </div>
             </div>
+                <div class="row justify-content-md-center">
+                    <div class="col col-md-12 col-sm-12 col-lg-8">
+                        <p class="fade-in">My passions are fueled by all things creative. I design and develop beautiful and functional websites for small businesses. Let's create together.
+                        </p>
+                    </div>
+                </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col col-md-8 col-sm-3 col-lg-6 offset-3">
+                             <p><span class="blinking text-secondary" style="font-size:25px;cursor:pointer" onclick="openNav()">Explore</span></p>
+                        </div>
+                    </div>
         </div>
 
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <p class="fade-in">My passions are fueled by all things creative. I design and develop beautiful and functional websites for small businesses. Let's create together.
-                    </p>
-                    <p><span style="font-size:20px;cursor:pointer" class="text-secondary"  onclick="openNav()">Explore</span></p>
+            <div class="row justify-content-center">
+                <div class="col col-md-10 col-sm-12 text-center">
+                    
+                        <a class="active text-secondary" href="#home">Home |</a>
+                        <a class="text-secondary" href="#about"> About |</a>
+                        <a class="text-secondary" href="#projects"> Projects |</a>
+                        <a class="text-secondary" href="#shop"> Shop |</a>
+                        <a class="text-secondary" href="#contact"> Contact |</a>
                 </div>
-                
+                <div class="col">
+                        <a class="btn btn-social-icon btn-instagram fa-lg" href="http://instagram.com/"> <i class="fa fa-instagram"></i></a>
+                </div>
             </div>
         </div>
+    </footer>
 
         
             
@@ -71,10 +88,6 @@
             function closeNav() {
               document.getElementById("mySidenav").style.display = "none";
             }
-
-            
-                
-
                    
     </script>
 

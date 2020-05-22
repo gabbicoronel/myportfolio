@@ -1,31 +1,38 @@
 body {
     background-color: rgb(186, 177, 175) ;
-    border-left: solid lightgray;
-    margin-left: 30px;
+    margin: 75px 75px 75px 75px;
     
 }
 
 header {
-    text-align: center;
-    padding-top: 40px;
+    
+    padding-top: 30px;
+    padding-bottom: 0px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container {
+  text-align: justify;
 }
 
 .sidenav {
     display:none;
     height: 100%;
-    width: 200px;
+    width: 150px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: lightgray;
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 100px;
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 10px 8px 8px 32px;
     text-decoration: none;
+    font-family:'Oranienbaum', serif ;
     font-size: 25px;
     color: #818181;
     display: block;
@@ -40,11 +47,11 @@ header {
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 25px;
+    margin-left: 20px;
   }
   
   @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
+    .sidenav {padding-top: 30px;}
     .sidenav a {font-size: 18px;}
   }
 
@@ -56,17 +63,19 @@ header {
 
 #typewriter h2 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid lightgray; /* The typwriter cursor */
+    
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     text-align: center;
-    margin-left: 40px;
-    padding-left: 60px;
-    letter-spacing: .10em; /* Adjust as needed */
+    font-size: 22px;
+    margin-left: 25px;
+    padding-left: 30px;
+    letter-spacing: .20em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .5s step-end infinite;
     font-family: 'Courier New', Courier, monospace
+    
   }
 
   @keyframes typing {
@@ -74,30 +83,56 @@ header {
     to { width: 100% }
   }
 
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: lightgray }
-  }
+
 
 p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    margin: 20px 20px 20px 20px;
+    font-family: 'Oranienbaum', serif;
+    font-size: 22px;
+    margin: 40px 40px 40px 40px;
     display: inline-block;
-    padding-left: 50px;
-    
+    padding-left: 60px;
+    padding-bottom: 0px;
 }
 
 
 .fade-in, span {
-    animation: fadeIn ease 15s;
-    -webkit-animation: fadeIn ease 15s;
-    -moz-animation: fadeIn ease 15s;
-    -o-animation: fadeIn ease 15s;
-    -ms-animation: fadeIn ease 15s;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
   }
-span {
+
+
+
+span, .blinking {
+    color: whitesmoke;
+    border-bottom: solid whitesmoke 2px;
+    padding-top: 0px;
+    margin-top: 5px;
+    animation: blinkingText 1.2s infinite;
     text-align: center;
+    float: center;
+  
 }
+
+footer {
+  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  float: center;
+  font-family: 'Oranienbaum', serif;
+  font-size: 18px;
+}
+
+@keyframes blinkingText{
+  0%{     color: #000;    }
+  49%{    color: #000; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: #000;    }
+}
+
   @keyframes fadeIn {
     0% {
       opacity:0;
