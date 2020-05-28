@@ -1,179 +1,95 @@
 body {
     background-color: rgb(186, 177, 175) ;
     margin: 75px 75px 75px 75px;
+    font-family:'Poiret One', cursive; 
     
-}
-
-header {
-    
-    padding-top: 30px;
-    padding-bottom: 0px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.container {
-  text-align: justify;
 }
 
 .sidenav {
-    display:none;
-    height: 100%;
-    width: 150px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: lightgray;
-    overflow-x: hidden;
-    padding-top: 100px;
-  }
-  
-  .sidenav a {
-    padding: 10px 8px 8px 32px;
-    text-decoration: none;
-    font-family:'Oranienbaum', serif ;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 20px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 30px;}
-    .sidenav a {font-size: 18px;}
-  }
-
-
-  .row-content {
-    padding: 50px 0;
-    min-height: 200px;
+  height: 100%;
+  width: 200px;
+  padding-top: 50px;
+  font-size: 26px;
+  overflow-x: hidden;
+  background-color: transparent;
+  position: absolute;
 }
 
-#typewriter h2 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    text-align: center;
-    font-size: 22px;
-    margin-left: 25px;
-    padding-left: 30px;
-    letter-spacing: .20em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .5s step-end infinite;
-    font-family: 'Courier New', Courier, monospace
-    
-  }
+.main {
+  margin-left: 200px;
+  padding-top: 200px;
+}
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-
-
+h1 {
+  font-family: 'Amatic SC', cursive;
+}
 p {
-    font-family: 'Oranienbaum', serif;
-    font-size: 22px;
-    margin: 40px 40px 40px 40px;
-    display: inline-block;
-    padding-left: 60px;
-    padding-bottom: 0px;
+  font-size: 20px;
 }
 
 
-.fade-in, span {
-    animation: fadeIn ease 10s;
-    -webkit-animation: fadeIn ease 10s;
-    -moz-animation: fadeIn ease 10s;
-    -o-animation: fadeIn ease 10s;
-    -ms-animation: fadeIn ease 10s;
-  }
-
-
-
-span, .blinking {
-    color: whitesmoke;
-    border-bottom: solid whitesmoke 2px;
-    padding-top: 0px;
-    margin-top: 5px;
-    animation: blinkingText 1.2s infinite;
-    text-align: center;
-    float: center;
-  
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-footer {
-  margin-bottom: 10px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  float: center;
-  font-family: 'Oranienbaum', serif;
-  font-size: 18px;
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
-@keyframes blinkingText{
-  0%{     color: #000;    }
-  49%{    color: #000; }
-  60%{    color: transparent; }
-  99%{    color:transparent;  }
-  100%{   color: #000;    }
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
-  @keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
   
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-  }
+
 
